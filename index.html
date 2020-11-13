@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+    <script type="text/javascript">;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[]; p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+    };p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+    n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","https://www.capitalone.ca/js/wwwSnowplowSetup.js","snowplow"));
+
+    window.snowplow("newTracker", "canadaTracker", "potomac-clickstream.capitalone.com", {
+        appId: "portal_compass_canada",
+        platform: "web",
+        post: true,
+        cookieDomain: null,
+        discoverRootDomain: true,
+        crossDomainLinker: function (linkElement) {
+        return /.capitalone.ca/.test(linkElement.href);
+        }
+    });
+    window.snowplow("enableActivityTracking",10,10);
+    window.snowplow("trackPageView");
+    window.snowplow("enableLinkClickTracking",null,!0,!1);
+    </script>
+
+
     
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125987582-1"></script>
     <script>
@@ -198,6 +218,6 @@
         </footer>
     </div>
 
-<script type="text/javascript" src="assets/js/c1-gtc.086ece8e69155f96463f.js"></script></body>
+<script type="text/javascript" src="assets/js/c1-gtc.dda38abff54c4c02b14b.js"></script></body>
 
 </html>
